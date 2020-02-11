@@ -1,0 +1,95 @@
+body {
+    *text-align: center;
+    /* display: flex;
+    /* justify-content: center; 
+    align-content: center;
+    flex-direction: column; */
+}
+
+header {
+    border: 1px solid lightgrey;
+    text-align: center;
+    height: auto;
+    width: 100vw;
+}
+
+.gameBoard {
+    width: 80vw;
+    height: 80vh;
+    display:grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    margin:0 auto
+    }
+
+.gridBlock {
+    display:grid;
+    align-items: center;
+    border: 10px;
+    background:whitesmoke;
+    border: 1px solid lightgrey;
+}
+/* #gridBlock11 {
+    border: 1px solid lightgrey;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#gridBlock12 {
+    border: 1px solid lightgrey;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#gridBlock13 {
+    border: 1px solid lightgrey;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#gridBlock21 {
+    border: 1px solid lightgrey;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#gridBlock22 {
+    border: 1px solid lightgrey;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#gridBlock23 {
+    border: 1px solid lightgrey;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#gridBlock31 {
+    border: 1px solid lightgrey;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#gridBlock32 {
+    border: 1px solid lightgrey;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#gridBlock33 {
+    border: 1px solid lightgrey;
+    grid-row: 3;
+    grid-column: 3;
+} */
+
+footer {
+    border: 1px solid lightgrey;
+    text-align: center;
+    height: 10vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#resetButton {
+    vertical-align: middle;    
+}
