@@ -17,14 +17,11 @@ header {
 
 .gridBlock {
     display:grid;
-    border: 2px solid black;
-    border: 10px;
+    border: 5px solid grey;
     background:whitesmoke;
-    border: 1px solid lightgrey;
 }
 
 footer {
-    text-align: center;
     height: auto;
     width: 100vw;
     display:grid;
@@ -37,11 +34,12 @@ footer {
     width:20vw;
     border: 2px solid black;
     border-radius: 5px;
+    vertical-align : middle;
 }
 
 #redScore {
     grid-column: 1;
-    background: lightcoral
+    background: lightcoral;
 }
 
 #resetButton {
@@ -56,5 +54,4 @@ footer {
 #blueScore {
     grid-column:3;
     background: lightblue;
-
 }
