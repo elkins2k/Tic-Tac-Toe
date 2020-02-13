@@ -26,10 +26,10 @@ const winningSequences = [
     [`11`,`22`,`33`],[`13`,`22`,`31`] //diagonal
 ]
 let redMoves=[]
-redWins=0
+let redWins=0
 const redScore = document.querySelector(`#redScore`)
 let blueMoves=[]
-blueWins=0
+let blueWins=0
 const blueScore = document.querySelector(`#blueScore`)
 let won = false
 function checkWinner (moves) {
@@ -39,10 +39,10 @@ function checkWinner (moves) {
             instructions.innerText = `${turn} won! Select the RESET to continue.`;
             if (turn === `RED`) {
                 redWins++
-                redScore.innerText = `Red Score: ${redWins}`
+                redScore.innerHTML = `Red Score:<br>${redWins}`
             } else {
                 blueWins++
-                blueScore.innerText = `Blue Score: ${blueWins}`
+                blueScore.innerHTML = `Blue Score:<br>${blueWins}`
             }
         }
     })
@@ -50,7 +50,7 @@ function checkWinner (moves) {
 
 function addColor (event) {
     //gridClick = document.querySelector(`#${event.target.id}`)
-    if (won===false) {
+    if (!won) {
         gridClick = document.getElementById(`${event.target.id}`)
         gridClick.setAttribute(`style`, `background: ${turn}`)
         gridClick.removeEventListener(`click`,addColor)
@@ -61,9 +61,9 @@ function addColor (event) {
             blueMoves.push(gridClick.id)
             checkWinner(blueMoves)
         }
-        if (counter === 8 && won === false) {
+        if (counter === 8 && !won) {
             instructions.innerText = `It's a tie! Select the RESET to continue.`        
-        } else if ( won === false ){
+        } else if ( !won ){
             counter ++
             turn = counter %2 === 0 ? `RED` : `BLUE`
             instructions.innerText = `It is now ${turn}'s turn...`

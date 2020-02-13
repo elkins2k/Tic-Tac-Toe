@@ -36,6 +36,7 @@ footer {
     border-radius: 5px;
     align-items: center;
     justify-content: center;
+    font-weight: bolder;
 }
 
 #redScore {
