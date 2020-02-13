@@ -8,8 +8,8 @@ header {
 }
 
 .gameBoard {
-    width: 75vw;
-    height: 75vh;
+    width: 50vh;
+    height: 50vh;
     display:grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     margin:0 auto;
@@ -34,7 +34,8 @@ footer {
     width:20vw;
     border: 2px solid black;
     border-radius: 5px;
-    vertical-align : middle;
+    align-items: center;
+    justify-content: center;
 }
 
 #redScore {
